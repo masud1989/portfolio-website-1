@@ -5,7 +5,7 @@
                     <ul class="navbar-nav mr-auto mt-md-0">
                         <li class="nav-item "> <a class="nav-link nav-toggler  hidden-md-up  waves-effect waves-dark" href="javascript:void(0)"><i class="fas  fa-bars"></i></a></li>
                         <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="fas fa-bars"></i></a> </li> 
-                     <li class="nav-item mt-3">ADMIN</li>
+                     <li class="nav-item mt-3">ADMIN PANEL</li>
 					</ul>
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item"><a href="" class="btn btn-sm btn-danger">Logout</a></li>
@@ -18,9 +18,11 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li class="nav-devider mt-0" style="margin-bottom: 5px"></li>
-                        <li> <a href="index.html" ><span> <i class="fas fa-home"></i> </span><span class="hide-menu">Home</span></a></li>
-                        <li> <a href="VisitorTable.html" ><span> <i class="fas fa-users"></i> </span><span class="hide-menu">Visitor</span></a></li>
+                        <li> <a href="{{route('Admin.Home')}}" ><span> <i class="fas fa-home"></i> </span><span class="hide-menu">Home</span></a></li>
+                        <li> <a href="{{url('/visitor')}}" ><span> <i class="fas fa-users"></i> </span><span class="hide-menu">Visitor</span></a></li>
                     	<li> <a href="service.html" ><span> <i class="fas fa-globe"></i> </span><span class="hide-menu">Services</span></a></li>
+                        <li> <a href="service.html" ><span> <i class="fa fa-plus"></i> </span><span class="hide-menu">Others</span></a></li>
+                        <li> <a href="service.html" ><span> <i class="fa fa-bars"></i> </span><span class="hide-menu">Others</span></a></li>
 					</ul>
                 </nav>
             </div>

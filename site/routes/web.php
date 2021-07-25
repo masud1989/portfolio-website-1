@@ -18,3 +18,4 @@ use App\Models\VisitorModel;
 //});
 //Route::get('/', 'HomeController@HomeIndex');
 Route::get('/', 'HomeController@HomeIndex');
+Route::get('/', 'HomeController@HomeIndex');
