@@ -18,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/', 'HomeController@HomeIndex')->name('Admin.Home');
 Route::get('/visitor', 'VisitorController@VisitorIndex')->name('Admin.Visitor');
+Route::get('/services', 'ServicesController@ServicesIndex')->name('Admin.Services');
+Route::get('/getServicesData', 'ServicesController@getServicesData');

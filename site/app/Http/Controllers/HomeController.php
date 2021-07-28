@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\VisitorModel;
 use Illuminate\Http\Request;
+use App\Models\VisitorModel;
+use App\Models\ServicesModel;
 
 class HomeController extends Controller
 {
@@ -15,6 +15,8 @@ class HomeController extends Controller
         $timeDate=date("Y-m-d h:i:sa");
         VisitorModel::insert(['ip_address'=>$UserIP, 'visit_time'=>$timeDate]);
 
-        return view('home');
+        //===========Catching Service Data from Service Model =========================
+        $ServicesData=ServicesModel::all();
+        return view('home', compact('ServicesData'));
     }
 }

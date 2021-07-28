@@ -11,7 +11,7 @@ class VisitorController extends Controller
     public function VisitorIndex()
     {   
         $visitor=json_decode(VisitorModel::orderBy('id','desc')
-            ->take(11)
+            ->take(19)
                 ->get());
         return view('Visitor', compact('visitor'));
     }

@@ -17,5 +17,5 @@ use App\Models\VisitorModel;
 //    return view('home');
 //});
 //Route::get('/', 'HomeController@HomeIndex');
-Route::get('/', 'HomeController@HomeIndex');
+//Route::get('/', 'HomeController@HomeIndex');
 Route::get('/', 'HomeController@HomeIndex');

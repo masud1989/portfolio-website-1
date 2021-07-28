@@ -20,7 +20,7 @@
                         <li class="nav-devider mt-0" style="margin-bottom: 5px"></li>
                         <li> <a href="{{route('Admin.Home')}}" ><span> <i class="fas fa-home"></i> </span><span class="hide-menu">Home</span></a></li>
                         <li> <a href="{{url('/visitor')}}" ><span> <i class="fas fa-users"></i> </span><span class="hide-menu">Visitor</span></a></li>
-                    	<li> <a href="service.html" ><span> <i class="fas fa-globe"></i> </span><span class="hide-menu">Services</span></a></li>
+                    	<li> <a href="{{route('Admin.Services')}}" ><span> <i class="fas fa-globe"></i> </span><span class="hide-menu">Services</span></a></li>
                         <li> <a href="service.html" ><span> <i class="fa fa-plus"></i> </span><span class="hide-menu">Others</span></a></li>
                         <li> <a href="service.html" ><span> <i class="fa fa-bars"></i> </span><span class="hide-menu">Others</span></a></li>
 					</ul>
