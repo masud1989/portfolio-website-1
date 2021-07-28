@@ -12,7 +12,7 @@ function getServicesData(){
         var jsonData=response.data;
             $.each(jsonData, function(i, item){
                 $('<tr>').html(
-                    "<td> "+jsonData[i].id+" </td>"+
+                    "<td> <img class='table-img' src="+jsonData[i].service_img+"> </td>"+
                     "<td> <img class='table-img' src="+jsonData[i].service_img+"> </td>"+
                     "<td>"+jsonData[i].service_name+"</td>"+
                     "<td> "+jsonData[i].service_des+" </td>"+
